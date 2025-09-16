@@ -65,7 +65,6 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Learn
           Learn more
         </a>
         <a
