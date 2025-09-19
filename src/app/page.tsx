@@ -104,11 +104,11 @@ export default function Home() {
               <div
                 className={`max-w-xs lg:max-w-md px-4 py-2 rounded-lg ${
                   message.sender === 'user'
-                    ? 'bg-blue-500 text-white'
+                    ? 'bg-blue-600 text-white'
                     : 'bg-white text-gray-800 shadow-sm border'
                 }`}
               >
-                <p className="text-sm">{message.text}</p>
+                <p className="text-base font-bold shadow">{message.text}</p>
                 <p className="text-xs mt-1 opacity-70">
                   {message.timestamp.toLocaleTimeString([], {
                     hour: '2-digit',
@@ -145,7 +145,7 @@ export default function Home() {
               onChange={(e) => setInputText(e.target.value)}
               onKeyPress={handleKeyPress}
               placeholder="Ask me about flights, travel dates, or destinations..."
-              className="flex-1 resize-none border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="flex-1 resize-none border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
               rows={1}
               disabled={isLoading}
             />
